@@ -141,17 +141,17 @@ export default function MapComponent(props) {
                     <div className='topPop'>
                         <div className='topleft inPop'>
                             <h2>Safety Score</h2>
-                            <h4>{scores.safetyScore}</h4>
+                            <h4>{scores.safetyScore > 0 ? scores.safetyScore: null}</h4>
                         </div>
 
                         <div className='topright inPop'>
                             <h2>Park Score</h2>
-                            <h4>{scores.parkScore}</h4>
+                            <h4>{scores.parkScore > 0 ? scores.parkScore: null}</h4>
                         </div>
                     </div>
                     <div className='bottom inPop'>
                         <h2>Transportation Score</h2>
-                        <h4>{scores.transportationScore}</h4>
+                        <h4>{scores.transportationScore > 0 ? scores.transportationScore: null}</h4>
 
                     </div>
 
