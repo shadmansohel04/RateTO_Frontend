@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import { useEffect, useMemo, useState, useRef } from 'react';
 import axios from 'axios';
 import loadingIMG from '../assets/loadingIMG.gif'
-import {Hospitalclose, ttcIconMain, fireTruck, fireTruckBig, PoliceCar, PoliceCarClose, parkDesign, parkDesignClose, crimeDesign, circleDesign, Hospitals, ttcIcon } from '../assets/markers';
+import {Hospitalclose, ttcIconMain, fireTruck, fireTruckBig, PoliceCar, PoliceCarClose, parkDesign, parkDesignClose, crimeDesign, circleDesign, Hospitals, ttcIcon, generic } from '../assets/markers';
 import { useNavigate } from 'react-router-dom';
 import img from "../assets/blueLine.png";
 import green from "../assets/green.png"
@@ -133,6 +133,7 @@ export default function MapComponent(props) {
             draggable={true}
             eventHandlers={eventHandlers}
             position={home}
+            icon={generic}
             ref={markerRef}>
             <Popup>
                 <div className='popup'>

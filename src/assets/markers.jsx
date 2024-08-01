@@ -3,6 +3,13 @@ import L from 'leaflet';
 const fireURL = 'https://www.svgheart.com/wp-content/uploads/2021/11/fire-truck-emergency-vehicle-firefighter-free-svg-file-SvgHeart.Com-2.png';
 const policeURL = 'https://png.pngtree.com/png-vector/20230209/ourmid/pngtree-police-car-cartoon-png-image_6592485.png'
 
+const generic = L.icon({
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/25/25613.png",
+    iconSize: [35, 35],
+    iconAnchor: [17.5, 35],
+    popupAnchor: [0, -10]
+})
+
 const fireTruck = L.icon({
     iconUrl: fireURL,
     iconSize: [35, 20],
@@ -98,5 +105,6 @@ export {
     Hospitals,
     ttcIcon,
     ttcIconMain,
-    Hospitalclose
+    Hospitalclose,
+    generic
 };
