@@ -35,6 +35,10 @@ export default function MapComponent(props) {
     })
     const [scores, setScore] = useState()
 
+    useEffect(() => {
+        document.body.style.zoom = '100%';
+      }, []);
+
     function inputAddress(event){
         setnewaddress(event.target.value)
     }
